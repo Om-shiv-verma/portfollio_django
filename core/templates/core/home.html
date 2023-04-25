@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %} {% load static %}
+
+{% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/omshiv.jpeg' %}"
+      alt="ProfilePic"
+      class="img-thumbnail"
+      width="200px"
+    />
+  </div>
+  <div class="mt-5 text-white mx-5">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+    <div class="px-4" style="line-height:2rem;">
+      <p style="text-indent: 100px; text-align: justify;">
+        " my name is <b class="text-warning fs-4">Om Shiv Verma</b>, and I'm excited to be interviewing for the
+        Software Engineer position. I have a Bachelor's degree in Computer
+        Science and four years of experience in software development,specializing in Java and Python.</p>
+         <p style="text-align: justify;"> In my previous position, I was responsible for developing and implementing software solutions for a
+        variety of clients in the finance and healthcare industries. One of my
+        recent accomplishments was leading a team of developers to create a
+        custom software application for a major hospital, resulting in a 20%
+        increase in efficiency.</p><p style="text-align: justify;">I'm particularly interested in this position
+        because of the company's reputation for innovation and its commitment to
+        using cutting-edge technologies.</p> <p style="text-align: justify;">I'm confident that my skills in
+        software development, project management,and team collaboration will
+        make me a valuable addition to the team.Thank you for considering my
+        application, and I look forward to discussing this opportunity further."</p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+
+</div>
+{% endblock content %}

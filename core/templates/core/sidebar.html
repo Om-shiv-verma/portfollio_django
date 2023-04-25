@@ -1,0 +1,15 @@
+{% load static %}
+<div class="border-end border-white h-100">
+    <div class="text-center">
+      <img src="{% static 'core/images/omshiv.jpeg' %}" alt="profile" 
+      class="img-fluid rounded-circle mt-5" width="100px" >
+      <h4 class="mt-3 st-font" style="color:white";>OmShivPatel</4>
+    </div>
+    <hr class="text-white">
+    <nav class="nav flex-column text-center">
+      <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %} active {% endif %}">Home</a>
+      <a href="{% url 'services' %}" class="nav-link {% if request.path == '/serv/services/' %} active {% endif %}">Services</a>
+      <a href="{% url 'skill' %}" class="nav-link {% if request.path == '/edu/skill/' %} active {% endif %}">Skill</a>
+      <a href="{% url 'contact' %}" class="nav-link {% if request.path == '/contact/' %} active {% endif %}">Contact</a>
+    </nav>
+  </div>
